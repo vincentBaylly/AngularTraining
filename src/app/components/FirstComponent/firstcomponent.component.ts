@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-first', //nom pour utiliser le composant dans votre html
   templateUrl: './firstcomponent.component.html', // emplacement du fichier de gabarit html du composant
 })
-export class FirstComponent {}
+export class FirstComponent {
+  public showRandomly(bias: number) {
+    return Math.random() < bias;
+  }
+}
