@@ -4,4 +4,10 @@
   <div *ngIf="showRandomly(0.5)">
     <h1>Hello!</h1>
   </div>
+  <ul>
+    <li *ngFor="let product of products">
+      <h2>{{ product.name }} / ${{ product.price }}</h2>
+      <p>{{ product.description }}</p>
+    </li>
+  </ul>
 </div>
