@@ -7,6 +7,8 @@ import { MyEventComponent } from './components/MyEvent/myevent.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { DefaultImgPipe } from './pipes/defaultimg.pipe';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
+import { AComponent } from './components/a/a.component';
+import { BComponent } from './components/b/b.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { AppRoutingModule } from './modules/app-routing/app-routing.module';
     MyEventComponent,
     HighlightDirective,
     DefaultImgPipe,
+    AComponent,
+    BComponent,
   ],
   imports: [
     BrowserModule,
