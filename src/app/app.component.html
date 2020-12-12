@@ -84,6 +84,14 @@
 
   <p appHighlight>Highlight me!</p>
 
+  <img
+    [src]="
+      imageUrl
+        | defaultimg
+          : 'https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879_960_720.jpg'
+    "
+  />
+
   <!-- Footer -->
   <!-- Footer -->
   <footer class="page-footer font-small pt-4">
