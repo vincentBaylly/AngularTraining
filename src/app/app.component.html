@@ -74,31 +74,11 @@
   </div>
 
   <ul>
-    <li routerLink="/A">Go to A!</li>
-    <li routerLink="/B">Go to B!</li>
+    <li routerLink="/A">A</li>
+    <li routerLink="/B">B</li>
+    <li routerLink="/first">First</li>
   </ul>
   <router-outlet></router-outlet>
-  <!-- routed content appends here (AFTER THE ELEMENT, NOT IN IT!) -->
-
-  <!-- Resources -->
-  <h2>Resources</h2>
-
-  <div class="card-container">
-    <app-first></app-first>
-  </div>
-
-  <!-- (clickOnButton)="catchEvent($event)" -->
-  <app-event></app-event>
-
-  <p appHighlight>Highlight me!</p>
-
-  <img
-    [src]="
-      imageUrl
-        | defaultimg
-          : 'https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879_960_720.jpg'
-    "
-  />
 
   <!-- Footer -->
   <!-- Footer -->

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AComponent } from '../../components/a/a.component';
-import { BComponent } from '../../components/b/b.component';
+import { FirstComponent } from 'src/app/components/FirstComponent/firstcomponent.component';
+import { AComponent } from 'src/app/components/a/a.component';
+import { BComponent } from 'src/app/components/b/b.component';
 
 // un tableau contenant nos routes!
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'B',
     component: BComponent,
+  },
+  {
+    path: 'first',
+    component: FirstComponent,
   },
 ];
 

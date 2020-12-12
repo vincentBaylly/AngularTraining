@@ -12,8 +12,4 @@ export class AppComponent {
     const date = new Date();
     return date.getFullYear();
   }
-
-  catchEvent(event: any) {
-    console.log(event);
-  }
 }
