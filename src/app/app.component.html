@@ -73,6 +73,12 @@
     </svg>
   </div>
 
+  <ul>
+    <!-- routerLink(s) here -->
+  </ul>
+  <router-outlet></router-outlet>
+  <!-- routed content appends here (AFTER THE ELEMENT, NOT IN IT!) -->
+
   <!-- Resources -->
   <h2>Resources</h2>
 
@@ -80,7 +86,8 @@
     <app-first></app-first>
   </div>
 
-  <app-event (clickOnButton)="catchEvent($event)"></app-event>
+  <!-- (clickOnButton)="catchEvent($event)" -->
+  <app-event></app-event>
 
   <p appHighlight>Highlight me!</p>
 

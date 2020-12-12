@@ -6,6 +6,7 @@ import { FirstComponent } from './components/FirstComponent/firstcomponent.compo
 import { MyEventComponent } from './components/MyEvent/myevent.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { DefaultImgPipe } from './pipes/defaultimg.pipe';
+import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { DefaultImgPipe } from './pipes/defaultimg.pipe';
     HighlightDirective,
     DefaultImgPipe,
   ],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule, // routing feature module
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
