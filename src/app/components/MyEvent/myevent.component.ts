@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
-import { EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-event',
   templateUrl: './myevent.component.html',
 })
 export class MyEventComponent {
-  navchange: EventEmitter<number> = new EventEmitter();
+  @Output() clickOnButton: EventEmitter<string> = new EventEmitter();
 
   showClick() {
-    console.log('my click event was triggered');
+    //console.log('my click event was triggered');
+    this.clickOnButton.emit('my click event was triggered');
   }
 }
