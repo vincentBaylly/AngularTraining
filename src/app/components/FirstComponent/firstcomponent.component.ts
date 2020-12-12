@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './firstcomponent.component.html', // emplacement du fichier de gabarit html du composant
 })
 export class FirstComponent {
+  today = new Date();
+
   products = [
     {
       id: 1,
