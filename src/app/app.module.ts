@@ -9,6 +9,8 @@ import { DefaultImgPipe } from './pipes/defaultimg.pipe';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,9 @@ import { BComponent } from './components/b/b.component';
     DefaultImgPipe,
     AComponent,
     BComponent,
+    SignUpComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, // routing feature module
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
