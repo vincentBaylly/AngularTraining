@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FirstComponent {
   today = new Date();
-
+  imageUrl = '';
   products = [
     {
       id: 1,
@@ -39,7 +39,11 @@ export class FirstComponent {
     },
   ];
 
-  public showRandomly(bias: number) {
-    return Math.random() < bias;
+  // public showRandomly(bias: number) {
+  //   return Math.random() < bias;
+  // }
+
+  catchEvent(event: any) {
+    console.log(event);
   }
 }
