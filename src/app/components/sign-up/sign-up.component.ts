@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { User } from 'src/app/classes/user';
 
 @Component({
@@ -8,11 +9,17 @@ import { User } from 'src/app/classes/user';
 })
 export class SignUpComponent implements OnInit {
   //Property for the gender
-  private gender: string[] = ['Male', 'Female', 'Others'];
+  gender: string[] = ['Male', 'Female', 'Others'];
   //Property for the user
-  private user: User = new User(0, '', '', '', this.gender[0], false);
+  user: User = new User(0, '', '', '', this.gender[0], false);
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  public onFormSubmit(form: NgForm) {
+    this.user = form.value;
+    console.log(this.user);
+    console.log('valid: ' + form.valid);
+  }
 }
