@@ -10,6 +10,11 @@
       <p>{{ product.description }}</p>
     </li>
   </ul>
+  <ul>
+    <li *ngFor="let user of users">
+      <h2>{{ user.email }} - {{ user.gender }}</h2>
+    </li>
+  </ul>
   <p>Nous somme le {{ today | date: "d MMMM y" }}</p>
   <app-event (clickOnButton)="catchEvent($event)"></app-event>
 

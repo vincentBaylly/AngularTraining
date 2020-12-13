@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/classes/user';
+import { UsersService } from 'src/app/services/users.service';
 
 //Configuration du composant
 @Component({
   selector: 'app-first', //nom pour utiliser le composant dans votre html
   templateUrl: './firstcomponent.component.html', // emplacement du fichier de gabarit html du composant
 })
-export class FirstComponent {
+export class FirstComponent implements OnInit {
   today = new Date();
   imageUrl = '';
+  users: User[] = [];
   products = [
     {
       id: 1,
@@ -42,6 +45,12 @@ export class FirstComponent {
   // public showRandomly(bias: number) {
   //   return Math.random() < bias;
   // }
+
+  constructor(private userService: UsersService) {}
+
+  ngOnInit() {
+    this.users = this.userService.getUsers();
+  }
 
   catchEvent(event: any) {
     console.log(event);
