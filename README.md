@@ -30,6 +30,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Deploy on GitHub Page
+
+Change the ouput in the angular.json file to "outputPath": "docs/",
+ng build --prod --baseHref="https://(GithubUsername).github.io/AngularTraining/"
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
