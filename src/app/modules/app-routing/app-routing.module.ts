@@ -4,6 +4,7 @@ import { FirstComponent } from 'src/app/components/FirstComponent/firstcomponent
 import { AComponent } from 'src/app/components/a/a.component';
 import { BComponent } from 'src/app/components/b/b.component';
 import { SignUpComponent } from 'src/app/components/sign-up/sign-up.component';
+import { LoginComponent } from 'src/app/components/login/login.component';
 
 // un tableau contenant nos routes!
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignUpComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
 

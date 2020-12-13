@@ -1,0 +1,19 @@
+.custom-row {
+  margin: 20px 20px 20px 15%;
+  padding: 30px 20px 20px 10px;
+  text-align: left;
+  border-radius: 4px;
+  background-color: #1976d2;
+}
+
+.form-group {
+  padding-top: 40px;
+}
+
+.form-control {
+  margin-left: 30px;
+}
+
+.control-label {
+  padding-top: 5px;
+}

@@ -11,6 +11,7 @@ import { AComponent } from './components/a/a.component';
 import { BComponent } from './components/b/b.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     AComponent,
     BComponent,
     SignUpComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
